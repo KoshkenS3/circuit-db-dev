@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import type { ApyResponse, LpBreakdownResponse, PriceResponse, TvlResponse } from './types.js';
 
 async function get<T>(path: string, cacheBuster: string): Promise<T> {
-  const response = await fetch(`https://api.beefy.finance/${path}?_=${cacheBuster}`);
+  const response = await fetch(`https://api.circuit.farm/${path}?_=${cacheBuster}`);
   return response.json() as T;
 }
 
