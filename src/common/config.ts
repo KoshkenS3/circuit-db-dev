@@ -22,8 +22,8 @@ export const API_PORT: number = getNumberEnv('PORT', 4000);
 //     '^(https:\\/\\/app\\.beefy\\.(com|finance)|http:\\/\\/localhost(:[0-9]+)?|http:\\/\\/127.0.0.1(:[0-9]+)?)$'
 // );
 export const API_CORS_ORIGIN = [
-  'https://circut.farm',
-  'https://www.circut.farm',
+  'https://circuit.farm',
+  'https://www.circuit.farm',
   'http://localhost',
 ];
 export const API_RANGE_KEY: string | undefined = process.env['API_RANGE_KEY'];
