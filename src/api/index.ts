@@ -28,7 +28,7 @@ server.register(async (instance, _opts, done) => {
     .register(FastifyEtag)
     .register(FastifyCors, {
       methods: ['GET'],
-      origin: NODE_ENV === 'production' ? API_CORS_ORIGIN : true,
+      origin: API_CORS_ORIGIN,
     })
     .register(routes, { prefix: '/api/v2' })
     .setErrorHandler((error, _request, reply) => {
